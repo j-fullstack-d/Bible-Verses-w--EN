@@ -17,23 +17,39 @@
   font-weight: bold;
 }
 
-.section__button {
+.section__button, .section__button--arrow {
   background-color: hsl(0, 0%, 83%);
   border-style: none;
   font-size: 14px;
   padding: 8px;
   margin: 5px;
   cursor: context-menu; 
+  transition: 1s;
 }
 
-.section__button--link {
+.section__button:active {
+  transform: scale(1.1);
+}
+
+.section__button--arrow {
+  transition: 1s;
+  background-color: hsl(180, 100%, 25%);
+}
+
+.section__button--arrow:active {
+  background-color: hsl(180, 100%, 35%);
+  transform: scale(1.1);
+}
+
+.section__button--link, .section__button--arrow--link {
   color: hsl(0, 0%, 0%);
   text-decoration: none;
   cursor: context-menu;
 }
 
 .section__button--size {
-  font-size: 22px;
+  font-size: 26px;
+  color: hsl(0, 0%, 100%);
 }
 
 .section__paragraph--padding {
