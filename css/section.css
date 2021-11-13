@@ -32,8 +32,11 @@
 }
 
 .section__button--arrow {
+  padding: 10px;
+  margin-right: 10px;
   transition: 1s;
-  background-color: hsl(180, 100%, 25%);
+  background-color: hsl(0, 0%, 83%);
+  /* background-color: hsl(180, 100%, 25%); */
 }
 
 .section__button--arrow:active {
